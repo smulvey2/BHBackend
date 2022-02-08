@@ -1,3 +1,5 @@
+const {Model, Sequelize, Op} = require('sequelize')
+
 class BaseService{
   model;
   constructor(model) {
@@ -5,7 +7,7 @@ class BaseService{
   }
 
   async getAll(){
-    console.log(this.model)
+    //console.log(this.model)
     const data = await this.model.findAll();
     return data;
   }

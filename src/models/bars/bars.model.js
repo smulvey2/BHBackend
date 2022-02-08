@@ -2,9 +2,11 @@ const { Sequelize } = require("sequelize");
 const { DataTypes } = Sequelize;
 
 const bar = {
-    id: { type: DataTypes.BIGINT, field: "osm_id", primaryKey: true },
+    id: { type: DataTypes.BIGINT, primaryKey: true },
     name: { type: DataTypes.STRING },
-    location: { type: DataTypes.STRING, field: "st_astext" }
+    latitude: {type: DataTypes.BIGINT, field: "lat"},
+    longitude: {type: DataTypes.BIGINT, field: "long"},
+    users: {type: DataTypes.ARRAY(DataTypes.STRING)}
 }
 
 module.exports = bar;

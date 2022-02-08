@@ -11,7 +11,7 @@ app.use(cors());
 
 const http = require('http');
 
-const hostname = '127.0.0.1';
+const hostname = '192.168.0.115';
 const port = 3000;
 
 app.get("/", (req, res) => {
@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 app.use("/api", apiRouter);
 
 app.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+  //console.log(`Server running at http://${hostname}:${port}/`);
 });
 
 module.exports = app;

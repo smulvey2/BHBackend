@@ -21,9 +21,9 @@ console.log("authenticated")
 const config = {
   timestamps: false,
   freezeTableName: true,
-  schema: "public",
+  schema: "public"
 };
 
 db.define("bars", bar, config);
-console.log(db)
+//console.log(db)
 module.exports = db;
