@@ -6,7 +6,9 @@ const bar = {
     name: { type: DataTypes.STRING },
     latitude: {type: DataTypes.BIGINT, field: "lat"},
     longitude: {type: DataTypes.BIGINT, field: "long"},
-    users: {type: DataTypes.ARRAY(DataTypes.STRING)}
+    users: {type: DataTypes.ARRAY(DataTypes.STRING)},
+    reviews: {type:DataTypes.ARRAY(DataTypes.JSON)},
+    description: {type: DataTypes.STRING}
 }
 
 module.exports = bar;
