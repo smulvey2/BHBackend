@@ -11,7 +11,7 @@ app.use(cors());
 
 const http = require('http');
 
-const hostname = '192.168.0.12';
+const hostname = '172.31.27.17';
 const port = 3000;
 
 app.get("/", (req, res) => {
