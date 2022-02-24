@@ -12,7 +12,7 @@ exports.getBarsByLocation = async (req, res, next) => {
     const bars = await service.getWhere({
         where: Sequelize.where( Sequelize.fn("ST_DistanceSphere",
         Sequelize.fn("ST_MakePoint", parseFloat(longitude), parseFloat(latitude)),
-        Sequelize.fn("ST_MakePoint", Sequelize.col("long"), Sequelize.col("lat"))), Op.lte, 1000)
+        Sequelize.fn("ST_MakePoint", Sequelize.col("long"), Sequelize.col("lat"))), Op.lte, 3000)
         
       });
     res.status(200);
