@@ -24,6 +24,6 @@ const config = {
   schema: "public"
 };
 
-db.define("bars", bar, config);
+db.define("importTest", bar, config);
 //console.log(db)
 module.exports = db;
