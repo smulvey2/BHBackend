@@ -1,7 +1,7 @@
 const {Sequelize, Op} = require('sequelize')
 const BarService = require("../services/bars/bars.service.js");
 const db = require("../models/db.js");
-const service = new BarService(db.models.importTest); 
+const service = new BarService(db.models.bars); 
 
 exports.getBarsByLocation = async (req, res, next) => {
     console.log('Nearby Bars')
