@@ -21,7 +21,8 @@ console.log("authenticated")
 const config = {
   timestamps: false,
   freezeTableName: true,
-  schema: "public"
+  schema: "public",
+  tableName: "importTest"
 };
 
 db.define("bars", bar, config);
