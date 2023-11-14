@@ -4,11 +4,12 @@ const { DataTypes } = Sequelize;
 const bar = {
     id: { type: DataTypes.BIGINT, primaryKey: true },
     name: { type: DataTypes.STRING },
-    latitude: {type: DataTypes.BIGINT, field: "lat"},
-    longitude: {type: DataTypes.BIGINT, field: "long"},
+    latitude: {type: DataTypes.BIGINT, field: "latitude"},
+    longitude: {type: DataTypes.BIGINT, field: "longitude"},
     users: {type: DataTypes.ARRAY(DataTypes.STRING)},
     reviews: {type:DataTypes.ARRAY(DataTypes.JSON)},
-    description: {type: DataTypes.STRING}
+    description: {type: DataTypes.STRING},
+    category: {type: DataTypes.STRING}
 }
 
 module.exports = bar;
