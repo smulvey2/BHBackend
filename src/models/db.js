@@ -20,9 +20,9 @@ console.log("authenticated")
 }
 const config = {
   timestamps: false,
-  freezeTableName: true,
+  freezeTableName: false,
   schema: "public",
-  tableName: "importTest"
+  tableName: "worldbars"
 };
 
 db.define("bars", bar, config);
