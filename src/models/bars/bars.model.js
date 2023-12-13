@@ -9,7 +9,14 @@ const bar = {
     users: {type: DataTypes.ARRAY(DataTypes.STRING)},
     reviews: {type:DataTypes.ARRAY(DataTypes.JSON)},
     description: {type: DataTypes.STRING},
-    category: {type: DataTypes.STRING}
+    Dive: {type: DataTypes.STRING},
+    Sports: {type: DataTypes.STRING},
+    Cocktail: {type: DataTypes.STRING},
+    Club: {type: DataTypes.STRING},
+    Gay: {type: DataTypes.STRING},
+    Brewery: {type: DataTypes.STRING},
+    Pub: {type: DataTypes.STRING},
+    Smoking: {type: DataTypes.STRING}
 }
 
 module.exports = bar;
